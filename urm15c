@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+sh /usr/local/lib/urm15/urmcompile.sh "$@"
