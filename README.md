@@ -15,7 +15,7 @@ it). The program keeps executing instructions in order, unless a jump
 occurs in which case it executes the line specified by the jump.
 
 The program stops running when it tries to execute an instruction that
-does not exist. This either happens by jumping to a non-existant location,
+does not exist. This either happens by jumping to a non-existent location,
 or simply by executing the final instruction.
 
 There are four computation commands, and four I/O commands:
