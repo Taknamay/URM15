@@ -30,7 +30,7 @@ COMPUTATIONAL COMMANDS
 
 I/O COMMANDS
 ------------
-- RDN n: (printchr) Reads a number from stdin and puts it into Rn.
+- RDN n: (readnum) Reads a number from stdin and puts it into Rn.
 - RDC n: (readchr)  Reads a char from stdin and puts the value into Rn.
 - PRN n: (printnum) Prints the numerical value from Rn.
 - PRC n: (printchr) Prints the char value from Rn.
