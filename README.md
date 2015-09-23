@@ -1,7 +1,7 @@
-URM15c - a compiler for a very simple language
-==============================================
+URM15scm - an interpreter for a very simple language
+====================================================
 
-URM15c a source-to-C translator for my language, URM15, which is based
+URM15scm is an interpreter for my language, URM15, which is based
 off of a theoretical model of an unbounded register machine. A complete
 description of the internal operations of this machine are given at
 https://proofwiki.org/wiki/Definition:Unlimited_Register_Machine
@@ -26,7 +26,7 @@ COMPUTATIONAL COMMANDS
 - CLR n:     (zero)  Sets Rn to 0.
 - INC n:     (succ)  Sets Rn to Rn + 1.
 - CPY m n:   (copy)  Puts the value from Rm into Rn.
-- JMP m n q: (jump)  If Rm equals Rn, go to instruction q.
+- JMP m n q: (jump)  If Rm equals Rn, offset the program counter by q.
 
 I/O COMMANDS
 ------------
@@ -34,7 +34,3 @@ I/O COMMANDS
 - RDC n: (readchr)  Reads a char from stdin and puts the value into Rn.
 - PRN n: (printnum) Prints the numerical value from Rn.
 - PRC n: (printchr) Prints the char value from Rn.
-
-Note that RDC and PRC should, preferably, work with UTF-8 input and output.
-However, I am well-versed in neither C nor UTF-8, so my implementation
-only allows for ASCII input and output.
